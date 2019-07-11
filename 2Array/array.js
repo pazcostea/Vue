@@ -24,3 +24,15 @@ var persona = {
 for (let propiedad in persona){
     console.log(propiedad + " : " + persona[propiedad]);
 }
+
+//Iteramos con el for of
+for (var n of nombreArray)
+{
+    console.log(n);
+}
+//foreach opcion 1
+nombreArray.forEach((n) => {
+    console.log(n);
+})
+//foreach opcion 2
+nombreArray.forEach((n) => console.log(n))
