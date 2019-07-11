@@ -61,3 +61,4 @@ let idTimeout = setTimeout(() => {
 }, 4 * 1000);
 console.log("id intervalo", idTimeout);
 console.log("id intervalo", id);
+//
