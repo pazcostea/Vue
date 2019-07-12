@@ -1,11 +1,15 @@
 <template>
   <div>
-    <h1>{{nombre}}</h1>
-    <h3>{{numero}}</h3>
-    <button @click="incrementar">Incrementar</button>
+    <h1>Habrá algo....</h1>
+    <Counter :initValue="200" :maxValue="205" :minValue="199"/>
+    <Counter/>
+    <Counter/>
+    <Counter/>
   </div>
 </template>
 <script>
+import Counter from '../components/Counter.vue';
+
 export default {
   data() {
     return {
@@ -13,11 +17,8 @@ export default {
       numero: 0,
     };
   },
-  methods: {
-    incrementar() {
-      this.numero += 1;
-    },
+  components: {
+    Counter,
   },
 };
-
 </script>
