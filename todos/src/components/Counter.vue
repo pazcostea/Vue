@@ -50,7 +50,7 @@ export default {
       return this.numero <= this.minValue;
     },
     porcentajeCompletado() {
-      return 100 * (this.numero - this.min) / (this.max - this.min);
+      return 100 * (this.numero - this.minValue) / (this.max - this.minvalue);
     },
     esVerde() {
       return this.porcentajeCompletado <= 33;
